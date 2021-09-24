@@ -7,7 +7,7 @@
     android:layout_margin="16dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".activity.MainActivity" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,17 +17,18 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editCadastroEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_edit_text"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editCadastroSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-2dp"
@@ -35,6 +36,7 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:padding="10dp" />
 
     <LinearLayout
@@ -51,10 +53,11 @@
             android:text="Logar" />
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switchAcesso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView2"
@@ -64,7 +67,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAcesso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
