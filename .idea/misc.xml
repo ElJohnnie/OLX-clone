@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/projects/OLX/app/src/main/res/drawable/bg_edit_text.xml" value="0.2962962962962963" />
+        <entry key="..\:/Android/projects/OLX/app/src/main/res/layout/activity_anuncios.xml" value="0.1640625" />
+        <entry key="..\:/Android/projects/OLX/app/src/main/res/layout/activity_cadastro.xml" value="0.1640625" />
         <entry key="..\:/Android/projects/OLX/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/projects/OLX/app/src/main/res/menu/menu_main.xml" value="0.1640625" />
       </map>
     </option>
   </component>
