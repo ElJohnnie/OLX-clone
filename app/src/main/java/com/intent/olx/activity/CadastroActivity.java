@@ -3,6 +3,7 @@ package com.intent.olx.activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,6 +62,7 @@ public class CadastroActivity extends AppCompatActivity {
                                                 Toast.LENGTH_LONG)
                                                 .show();
                                         //Direcionar para a tela principal do App
+                                        startActivity(new Intent(getApplicationContext(), AnunciosActivity.class));
 
                                     }else{
                                         String erroExcecao = "";
@@ -97,6 +99,8 @@ public class CadastroActivity extends AppCompatActivity {
                                                 "Logado com sucesso.",
                                                 Toast.LENGTH_LONG)
                                                 .show();
+                                        //direcionar para a tela de anuncios
+                                        startActivity(new Intent(getApplicationContext(), AnunciosActivity.class));
                                     }else{
                                         Toast.makeText(
                                                 CadastroActivity.this,
